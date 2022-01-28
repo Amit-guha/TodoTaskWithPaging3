@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemListShow">
+    <fragment
+        android:id="@+id/itemListShow"
+        android:name="com.example.todoapp.ItemListShow"
+        android:label="itemlistshow"
+        tools:layout="@layout/itemlistshow" >
+        <action
+            android:id="@+id/action_itemListShow_to_itemAdd4"
+            app:destination="@id/itemAdd4" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemAdd4"
+        android:name="com.example.todoapp.ItemAdd"
+        android:label="itemadd"
+        tools:layout="@layout/itemadd" >
+        <action
+            android:id="@+id/action_itemAdd4_to_itemListShow"
+            app:destination="@id/itemListShow" />
+        <argument
+            android:name="header"
+            app:argType="com.example.todoapp.ItemName" />
+    </fragment>
+</navigation>
