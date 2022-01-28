@@ -1,8 +1,10 @@
 package com.example.todotask
 
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.paging.PagingDataAdapter
@@ -15,7 +17,7 @@ class NewAdapter : PagingDataAdapter<ItemName, NewAdapter.NewViewHolder>(PHOTO_C
    // private var userlist = emptyList<ItemName>()
     class NewViewHolder(itemview: View) : RecyclerView.ViewHolder(itemview){
         val taskname: TextView = itemview.findViewById(R.id.tv_task)
-        val liner : LinearLayout =itemview.findViewById(R.id.lay)
+        val btn : ImageButton =itemview.findViewById(R.id.lay)
     }
 
     companion object {
@@ -35,8 +37,11 @@ class NewAdapter : PagingDataAdapter<ItemName, NewAdapter.NewViewHolder>(PHOTO_C
         holder.apply {
             taskname.text = currentitem?.namesItem
 
-            liner.setOnClickListener {
-                liner.setBackgroundResource(R.drawable.check)
+            btn.setOnClickListener {
+                btn.setBackgroundResource(R.drawable.check)
+               // btn.setBackgroundResource(R.drawable.check)
+                // taskname.setTextColor(R.color.gray)
+                taskname.setPaintFlags(taskname.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
             }
         }
     }

@@ -23,12 +23,14 @@
             android:text="Amit guha"
             android:textSize="15sp" />
 
-        <LinearLayout
+        <ImageButton
             android:id="@+id/lay"
             android:layout_width="0dp"
-            android:layout_height="20dp"
+            android:background="@drawable/round_button"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
             android:layout_weight="0.3"
-            android:background="@drawable/ic_baseline_radio_button_unchecked_24" />
+            android:src="@drawable/ic_baseline_radio_button_unchecked_24"/>
 
     </LinearLayout>
 
