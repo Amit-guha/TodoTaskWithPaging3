@@ -20,8 +20,6 @@ A simple  to-do list application followd by MVVM Architecture pattern
 
 # Screenshots
 <p align="center" width="100%">
-  
-    <img width="33%" src="https://github.com/Amit-guha/TodoTaskWithPaging3/blob/master/app/src/main/assets/Screenshot_20220128_214224.jpg"> 
-    <img width="33%" src="https://github.com/Amit-guha/TodoTaskWithPaging3/blob/master/app/src/main/assets/Screenshot_20220128_214219.jpg> 
- 
+    <img width="50%" src="https://github.com/Amit-guha/TodoTaskWithPaging3/blob/master/app/src/main/assets/Screenshot_20220128_214224.jpg"> 
+    <img width="50%" src="https://github.com/Amit-guha/TodoTaskWithPaging3/blob/master/app/src/main/assets/Screenshot_20220128_214219.jpg"> 
 </p>
